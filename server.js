@@ -24,5 +24,5 @@ app.post("/api/ai", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
-
+app.get("/", (req, res) => res.json({ status: "ok" }));
 app.listen(3000, () => console.log("Server running"));
